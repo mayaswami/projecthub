@@ -126,8 +126,7 @@ with check (
   )
 );
 
--- Allow owners to remove organization members
--- but prevent the last remaining owner from removing themselves.
+-- Allow owners to remove organization members but prevent the last remaining owner from removing themselves.
 
 create policy "Owners can delete organization members"
 on public.organization_members
